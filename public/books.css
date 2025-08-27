@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.book-detail{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.book-content{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+ 
+}
+
+.book-content img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+     cursor: pointer;
+     transition: transform 0.4s ease;
+}
+
+.book-content img:hover{
+    transform: translate(-5px) scale(1.1);
+}
+
+button{
+    padding: 0.5rem 1.5rem;
+    background-color: #fda9a9;
+    border: none;
+    outline: none;
+    position: absolute;
+    right:1rem;
+    top:1rem;
+    font-size: large;
+    cursor: pointer;
+}

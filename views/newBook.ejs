@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/books.css">
+    <title>Detail</title>
+</head>
+<body>
+
+    <h1>New Books</h1>
+
+    <button class="add-book-btn">+ Book</button>
+
+
+     <div class="book-detail">
+      <% for(const book of books){%>
+  <div class="book-content">
+    <img 
+      src="<%=book.image_url %>" 
+      alt="book image" class="book-content-img"  data-id="<%= book.id %>">
+
+  </div>
+<% } %>
+     </div>
+    
+
+     <script>
+        document.body.addEventListener("click",(e)=>{
+            if(e.target.classList.contains("book-content-img")){
+             window.location.href=`/newBook/${e.target.dataset.id}`; 
+
+            }
+        })
+
+
+      document.body.addEventListener("click",(e)=>{
+        if(e.target.classList.contains("add-book-btn")){
+           window.location.href = `/newBook/add`;
+        }
+      });
+     </script>
+  
+
+</body>
+</html>

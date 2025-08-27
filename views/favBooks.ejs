@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fav.css">
+    <title>Document</title>
+</head>
+<body>
+
+         <h1>Favorite Books</h1>
+
+     <div class="fav-book-container">
+         <% for(  const book  of books){ %>
+         <img
+          src="<%=book.image_url%>"
+          alt="book image" class="book-content-img"  data-id="<%=book.id %>">
+         
+         <%}%>
+     </div>
+
+
+
+     <script>
+        document.body.addEventListener("click",(e)=>{
+            if(e.target.classList.contains("book-content-img")){
+             window.location.href=`/fav/${e.target.dataset.id}`;
+
+            }
+        })
+     </script>
+
+</body>
+</html>

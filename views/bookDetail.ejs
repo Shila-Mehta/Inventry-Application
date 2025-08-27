@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/bookDetail.css" />
+  <title><%= book.title %></title>
+</head>
+<body>
+  <div class="book-detail-container">
+    
+    <% if (book.image_url) { %>
+      <img src="<%= book.image_url %>" alt="Book cover">
+    <% } else { %>
+      <p>No image available.</p>
+    <% } %>
+
+    <div class="book-detail-content">
+      <h1><%= book.title ? book.title.slice(0, 100) : "Untitled" %></h1>
+      <% if (book.subtitle) { %>
+        <p class="subtitle"><%= book.subtitle %></p>
+      <% } %>
+      
+      <% if (book.description) { %>
+        <p class="description"><%= book.description.slice(0, 250) %></p>
+      <% } %>
+      
+      <% if (book.page_count) { %>
+        <p class="pages"><strong>Pages:</strong> <%= book.page_count %></p>
+      <% } %>
+
+      <div class="btn-wrap">
+        <button>
+          <a href="/book/read/<%=id%>">Read Book</a>
+        </button>
+
+        <% if (isFav) { %>
+          <button class="fav book-detail-btn" data-id="<%= id %>" data-action="remove">Remove from fav</button>
+        <% } else { %>
+          <button class="fav book-detail-btn" data-id="<%= id %>" data-action="add">Add to fav</button>
+        <% } %>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector(".fav").addEventListener("click", async (e) => {
+      const bookId = e.target.dataset.id;
+      const action = e.target.dataset.action;
+
+      await fetch(`/fav/${action}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: bookId })
+      });
+
+      if (action === "remove") {
+        window.location.href = "/fav"; // Go to fav page after removal
+      } else {
+        window.location.reload(); // Refresh page after adding
+      }
+    });
+  </script>
+</body>
+</html>

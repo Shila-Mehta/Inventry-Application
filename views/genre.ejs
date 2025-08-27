@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/genre.css">
+    <title>Genre</title>
+</head>
+<body>
+
+        <select name="genre" id="genre"  class="genre">
+        <option value="">--Select Genre--</option>
+        <hr>
+        <option value="fantasy">Fantasy</option>
+        <hr>
+        <option value="science fiction">Science Fiction</option>
+         <hr>
+        <option value="mystery">Mystery</option>
+          <hr>
+        <option value="thriller">Thriller</option>
+          <hr>
+        <option value="romance">Romance</option>
+          <hr>
+        <option value="self help">Self Help</option>
+          <hr>
+        <option value="biography">Biography</option>
+          <hr>
+        <option value="peotry">Peotry</option>
+          <hr>
+        <option value="children">Children's Books</option>
+       </select>
+     
+
+    <script>
+         document.body.addEventListener("change",(e)=>{
+            if(e.target.classList.contains("genre")){
+               window.location.href=`/books/${e.target.value}`;
+            }
+         })
+    </script>
+</body>
+</html>

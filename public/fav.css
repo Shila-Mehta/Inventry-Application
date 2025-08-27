@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.fav-book-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    row-gap: 3rem;
+    padding: 1.5rem;
+}
+
+
+.fav-book-container img{
+    height: 230px;
+    width: 175px;
+    object-fit: cover;
+    cursor: pointer;
+     transition:transform 0.3s ease-in-out;
+}
+
+.fav-book-container img:hover{
+    transform: translateY(-7px) scale(1.1);
+}

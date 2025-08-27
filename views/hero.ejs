@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/hero.css">
+    <title>Document</title>
+</head>
+<body>
+     <hero>
+        <div class="hero">
+        <h1>Your Personal Book Inventory & Discovery Tool</h1>
+        <h3>Search, track, and explore books from all around the world</h3>
+        <button class="explore-btn">explore</button>
+        </div>
+        <img src="books.jpg" alt="books img"  class="hero-img">
+        
+     </hero>
+
+
+      <script>
+        document.querySelector(".explore-btn").addEventListener("click",(e)=>{
+             window.location.href=`/books`;
+        })
+    </script>
+
+</body>
+</html>
