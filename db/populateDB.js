@@ -6,13 +6,13 @@ dotenv.config();
 
 const { Client } = pg;
 
-const DB_URL =
-  process.env.NODE_ENV === "production"
-    ? process.env.PUBLIC_DB_URL
-    : process.env.LOCAL_DB_URL;
+// const DB_URL =
+//   process.env.NODE_ENV === "production"
+//     ? process.env.PUBLIC_DB_URL
+//     : process.env.LOCAL_DB_URL;
 
 const client = new Client({
-  connectionString: DB_URL,
+  connectionString: process.env.PUBLIC_DB_URL,
 });
 
 async function setupDatabase() {
