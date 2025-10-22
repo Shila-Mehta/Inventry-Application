@@ -29,6 +29,24 @@ API: Google Books API
 Tools & Libraries: pg, dotenv, nodemon
 
 
+
+## Project Screenshots
+<img width="2720" height="2970" alt="localhost_3000_ (2)" src="https://github.com/user-attachments/assets/af1c777c-9685-452b-962b-ca19303d1eda" />
+
+<img width="2720" height="6780" alt="localhost_3000_books" src="https://github.com/user-attachments/assets/a86d6ba0-9612-4517-b40d-ce9a539b7721" />
+
+<img width="2720" height="2180" alt="localhost_3000_book_lieGAgAAQBAJ" src="https://github.com/user-attachments/assets/7d84ef3c-0c35-445c-97f8-a661655c3212" />
+
+<img width="2720" height="2180" alt="localhost_3000_search" src="https://github.com/user-attachments/assets/c39b8101-03b2-4876-ab54-1f5d09bfeaf9" />
+
+<img width="2720" height="2180" alt="localhost_3000_newBook_add" src="https://github.com/user-attachments/assets/1a4da61b-dce1-441f-aa02-e4c085430452" />
+
+
+
+
+
+
+
 ## Project Structure
 ```
 └── 📁Inventery Application
