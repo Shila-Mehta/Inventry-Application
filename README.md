@@ -106,6 +106,7 @@ Problem-Solving & UX: Search, filtering, favorites, and daily recommendations.
 Clone the repository
 
 git clone https://github.com/Shila-Mehta/Inventry-Application.git
+
 cd Inventery Application
 
 
