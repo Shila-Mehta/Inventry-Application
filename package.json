@@ -6,7 +6,7 @@
   "scripts": {
     "setup-db": "node db/populateDB.js",
     "seed": "node data/Genre.js ",
-    "prestart": "npm run setup-db && npm run seed",
+    "presrun": "npm run setup-db && npm run seed",
     "start": "NODE_ENV=production node app.js",
     "dev": "nodemon app.js"
   },
