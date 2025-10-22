@@ -105,36 +105,32 @@ Problem-Solving & UX: Search, filtering, favorites, and daily recommendations.
 
 Clone the repository
 
-git clone https://github.com/yourusername/book-inventory.git
-cd book-inventory
+git clone https://github.com/Shila-Mehta/Inventry-Application.git
+cd Inventery Application
 
 
-Install dependencies
+# Install dependencies
 
 npm install
 
 
-Populate the database (if needed)
+# Populate the database (if needed)
 
 node db/populateDB.js
 
 
-Start the application
+# Start the application
 
 npm start
 
 
-Open in browser:
+# Open in browser:
 
 http://localhost:3000
 
-Usage
 
-Browse books and daily recommendations
 
-Search by title or author
-
-Usage
+## Usage
 
 Browse books and daily recommendations
 
