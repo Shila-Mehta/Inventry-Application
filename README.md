@@ -174,3 +174,12 @@ Display book cover images from API
 
 Automate database seeding for deployment
 
+
+👩‍💻 Author
+
+Nimra Abdul Jabbar
+
+GitHub:(https://github.com/)
+
+Portfolio:(https://nimra-react-portfolio.netlify.app/)
+
